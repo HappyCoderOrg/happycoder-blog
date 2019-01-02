@@ -1,0 +1,100 @@
+---
+title: 用 Python 自學資料科學與數據分析：基礎篇
+date: 2017-09-11 22:00:00
+tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, Data Mining, 人工智慧, 監督式學習, Supervised learning, 大數據, 資料分析, 數據分析, 學程式, 程式設計
+author: HappyCoder 自學程式好好玩
+---
+
+![Python 自學程式設計：程式設計思維入門](/images/learning-programming/coding.jpg) 
+
+# 什麼是資料科學？
+資料科學
+
+1. 程式設計能力
+2. 數學統計知識
+3. 專業領域能力
+
+1. 資料工程師
+
+2. 資料科學家
+
+3. 資料/數據分析師
+
+# 環境建置
+
+# 使用工具
+
+1. Python
+
+2. Numpy & Scipy
+
+3. Pandas
+
+4. Matplotlib
+
+5. Scikit-learn
+
+6. Anaconda
+
+# 綜合範例
+接著我們使用 [Breast Cancer Wisconsin (Diagnostic) Data Set ](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29) 進行一個綜合型範例：
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+from sklearn.linear_model import LogisticRegression
+# data preprocess pandas
+df_data = pd.read_csv('~/Desktop/projects/DataScience101/examples/Unit01/data.csv')
+
+print(df_data.keys())
+train_count = round(df_data.shape[0] * 0.75)
+df_train = df_data.ix[0:train_count, 1:32]
+df_test = df_data.ix[train_count:, 1:32]
+
+print(df_data.ix[1:2])
+
+df_test_negative = df_train.loc[df_train['diagnosis'] == 'B', ['radius_mean', 'texture_mean']]
+df_test_positive = df_train.loc[df_train['diagnosis'] == 'M', ['radius_mean', 'texture_mean']]
+
+print(df_test_negative)
+print(df_test_positive)
+
+# data visulization matplotlib
+plt.scatter(df_test_negative['radius_mean'], df_test_negative['texture_mean'], marker='o', s=150, c='red')
+plt.scatter(df_test_positive['radius_mean'], df_test_positive['texture_mean'], marker='x', s=150, c='black')
+plt.xlabel('radius_mean')
+plt.ylabel('texture_mean')
+plt.show()
+
+# numpy
+intercept = np.random.random([1])
+coef = np.random.random([2])
+lx = np.arange(0, 12)
+ly = (-intercept - lx * coef[0]) / coef[1]
+
+plt.plot(lx, ly, c='yellow')
+
+plt.scatter(df_test_negative['radius_mean'], df_test_negative['texture_mean'], marker='o', s=200, c='red')
+plt.scatter(df_test_positive['radius_mean'], df_test_positive['texture_mean'], marker='x', s=150, c='black')
+plt.xlabel('radius_mean')
+plt.ylabel('texture_mean')
+plt.show()
+
+# sklearn
+lr = LogisticRegression()
+# print(df_train[['radius_mean']], df_train['diagnosis'])
+lr.fit(df_train[['radius_mean']], df_train['diagnosis'])
+lr.score(df_test[['radius_mean']], df_test['diagnosis'])
+print(lr.predict(df_test[['radius_mean']]))
+print(df_test['diagnosis'])
+```
+
+
+# 延伸閱讀
+1. [htygithubMachine Learning: Python 機器學習：使­用Pytho­n](https://www.gitbook.com/book/htygithub/machine-learning-python/details)
+2. [輕鬆學習 R 語言](https://www.gitbook.com/book/yaojenkuo/learn-r-the-easy-way/details)
+3. [R 語言使用者的 Python 學習筆記](http://ithelp.ithome.com.tw/users/20103511/ironman/1077)
+4. [Scikit-Learn 教學：Python 與機器學習](https://www.datacamp.com/community/tutorials/scikit-learn-python#gs.v8eiZWQ)
+5. [Detecting Fake News with Scikit-Learn](https://www.datacamp.com/community/tutorials/scikit-learn-fake-news#gs.n44VR4k)
+6. [Machine Learning for Humans🤖👶](https://medium.com/machine-learning-for-humans/why-machine-learning-matters-6164faf1df12)

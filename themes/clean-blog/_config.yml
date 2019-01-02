@@ -1,0 +1,46 @@
+# Header
+menu:
+  Home: /
+  About: /about
+  Archives: /archives
+  RSS: /atom.xml
+  Github:
+    url: https://github.com/HappyCoderOrg
+    icon: github
+
+# Title on top left of menu. Leave empty to use main blog title
+menu_title: 
+
+# URL of the Home page image
+index_cover: /img/banner-s.jpg
+
+# Default post title
+default_post_title: Untitled
+
+# Comments. Choose one by filling up the information
+comments:
+  # Disqus comments
+  disqus_shortname: happycoderorg
+  # Facebook comments
+  facebook:
+    appid:
+    comment_count: 5
+    comment_colorscheme: light
+
+# Google Analytics Tracking ID
+google_analytics: UA-91250039-1
+
+# Addthis ID
+addthis: ra-5891d7d0431b8118
+
+# set your own favicon
+favicon: /img/favicon.png
+
+# Social Accounts
+twitter_url:
+twitter_handle:
+facebook_url: https://www.facebook.com/HappyCoderOrg
+github_url: https://github.com/HappyCoderOrg
+gitlab_url:
+linkedin_url:
+mailto:

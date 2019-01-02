@@ -1,0 +1,49 @@
+---
+title: 用 Python 自學資料科學與數據分析：機器學習之 Kaggle 實戰篇 I
+date: 2017-09-14 21:00:00
+tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, Data Mining, 人工智慧, 監督式學習, Supervised learning, 大數據, 資料分析, 數據分析, 學程式, 程式設計
+author: HappyCoder 自學程式好好玩
+---
+
+![Python 自學程式設計：程式設計思維入門](/images/learning-programming/coding.jpg) 
+
+# 機器學習起步走
+
+1. 監督式學習
+2. 非監督式學習
+3. 增強學習
+
+# 什麼是監督式學習？
+簡單來說監督式學習就是透過過去已有的經驗知識對未知的樣本目標進行預測其標記或是類別。一般來說可以分為分類學習（classification）和迴歸預測（regression）兩種。
+
+1. 觀察資料，進行探索式分析
+2. 將資料分為訓練資料（training data）和測試資料（testing data）
+3. 將訓練資料預處理/資料清洗（data preprocessing/data cleaning）
+4. 特徵抽取轉化成特徵向量（feature vector）
+5. 將特徵向量和標記送入演算法中訓練出模型
+6. 測試資料重複資料預處理和特徵抽取，取出測試資料的特徵向量
+
+# 經典範例：鐵達尼號
+
+```py
+# We can use the pandas library in Python to read in the CSV file
+# This creates a pandas dataframe and assigns it to the titanic variable
+titanic = pandas.read_csv("titanic_train.csv")
+
+# Print the first five rows of the dataframe
+print(titanic.describe())
+```
+
+# 延伸閱讀
+1. [Machine Learning: Python 機器學習：使­用Pytho­n](https://www.gitbook.com/book/htygithub/machine-learning-python/details)
+2. [輕鬆學習 R 語言](https://www.gitbook.com/book/yaojenkuo/learn-r-the-easy-way/details)
+3. [R 語言使用者的 Python 學習筆記](http://ithelp.ithome.com.tw/users/20103511/ironman/1077)
+4. [Scikit-Learn 教學：Python 與機器學習](https://www.datacamp.com/community/tutorials/scikit-learn-python#gs.v8eiZWQ)
+5. [Detecting Fake News with Scikit-Learn](https://www.datacamp.com/community/tutorials/scikit-learn-fake-news#gs.n44VR4k)
+6. [Over 100 Data Science Interview Questions](http://www.learndatasci.com/data-science-interview-questions/)
+7. [Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic#tutorials)
+8. [How to score 0.8134 in Titanic Kaggle Challenge](http://ahmedbesbes.com/how-to-score-08134-in-titanic-kaggle-challenge.html)
+9. [KAGGLE ENSEMBLING GUIDE](https://mlwave.com/kaggle-ensembling-guide/)
+10. [Scikit-learn - feature reduction using RFECV and GridSearch. Where are the coefficients stored?](https://stackoverflow.com/questions/31059123/scikit-learn-feature-reduction-using-rfecv-and-gridsearch-where-are-the-coeff)
+11. [The key to building a data science portfolio that will get you a job](https://www.dataquest.io/blog/build-a-data-science-portfolio/)
+12. [Driven Data](https://www.drivendata.org/)

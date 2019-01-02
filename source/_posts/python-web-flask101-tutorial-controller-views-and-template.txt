@@ -1,0 +1,83 @@
+---
+title: Python Web Flask 實戰開發教學 - 使用 Flask WTForms 建立 Form 表單應用
+date: 2017-05-04 22:00:00
+author: HappyCoder 自學程式好好玩
+tags: Python, Django, MVC, Web, MTV, Web Backend, Web Framework, 教學, Flask, 框架, 網站開發, Anaconda, ORM, SQLAlchemy, Database, Models, MVC, 資料庫
+---
+
+![Python Web Flask 實戰開發教學](/images/flask101/python-logo.png) 
+
+# 前言
+Web 開發涉及層面很廣，包含了前後端開發、資料庫優化、平行處理、負載平衡、高可用性、資訊安全、雲端伺服器部屬等議題，本系列文章將透過介紹 Python Web Flask 實戰開發來學習現代化網站開發的方方面面。上一篇我們完成了環境建置，這一單元我們將進入 MVC 架構的 Models 部分並學習如何使用 SQLAlchemy 建立和資料庫互動的 ORM 機制。
+
+![Python Web Flask 實戰開發教學](/images/flask101/mvc_role_diagram.png) 
+
+# 什麼是 MVC？
+MVC 模式（Model–view–controller）是軟體工程中的一種軟體架構模式，把軟體系統分為三個基本部分：模型（Model）、視圖（View）和控制器（Controller）。
+
+- 控制器（Controller）- 對 Request/Response 進行處理並透過 Controller 把 Model 的資料串接到 View（Templates）。 
+- 視圖（View） - 直接面對使用者的使用者介面設計。
+- 模型（Model） - 負責和資料庫互動，儲存資料。
+
+使用 MVC 的好處在於可以用更高階的角度去思考整個程式架構提高程式可重用性和降低程式耦合性。 事實上 Django, Rails 和 ASP.NET MVC 等較成熟的 Web 框架也是參考 MVC 的架構去設計。
+
+在前面的單元我們運用 SQLAlchemy 將資料寫到資料庫，接下來這個單元我們要談的是 View 和 Controller，如何把資料透過 Controller 把 Model 的資料串接到 View（Templates）。 
+
+# 建立 Flask WTForms 表單應用
+在了解如何透過 Controller 來連結 Model 和 View 之後，我們來進一步探討 Form 表單的操作。在網路應用程式中 Form 表單扮演很重要的角色，是取得使用者資料和使用者互動的重要環節。一般而言表單應用具備以下四個步驟：
+
+- 用 HTML 建立 form 表單
+- 處理 HTTP POST request
+- 檢驗表單欄位內容是否正確
+- 把檢查過的資料儲存進 database 當中
+
+由於每次都要自己完成以上事項會十分冗長，所以我們會借重 Flask 的 Flask WTForms 去協助我們完成建置表單的任務。
+
+```index create_todo.html
+<div>
+</div>
+```
+
+```python
+    myvar =  request.form['myvar']
+    myvar = request.args['myvar']
+```
+
+```python todo_controller.py
+from flask import render_template, request
+from main import app
+
+app.route('/'):
+def create_todo():
+    return 'index'
+```
+
+```python forms.py
+from flask_wtf import FlaskForm
+from wtforms import TextField, IntegerField, TextAreaField, SubmitField, RadioField, SelectField
+from wtforms import validators, ValidationError
+
+class MyForm(FlaskForm):
+    '''
+    MyForm
+    '''
+    name = TextField('name', validators=[validators.DataRequired()])
+
+class ContactForm(FlaskForm):
+    name = TextField("Name Of Student",[validators.DataRequired("Please enter your name.")])
+    Gender = RadioField('Gender', choices = [('M','Male'), ('F','Female')])
+    Address = TextAreaField("Address")
+    email = TextField('Email', [validators.DataRequired("Please enter your email address."), validators.Email("Please enter your email address.")])
+    Age = IntegerField('age')
+    language = SelectField('Languages', choices=[('cpp', 'C++'), ('py', 'Python')])
+    submit = SubmitField('Send')
+```
+
+# 總結
+本文介紹了資料庫、關聯式資料庫、ORM 的概念，我們也實際使用了 Flask SQLAlchemy 和 Flask-Migrate 來操作我們的資料庫。在接下來章節中我們將持續介紹 Python Web Flask 實戰開發，並學習現代化網站開發的方方面面。
+
+# 延伸閱讀
+1. [Wiki MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+2. [Python Web 程式設計入門實戰線上課程](http://pics.ee/c34g)
+
+（image via [basicsofwebdevelopment](https://basicsofwebdevelopment.files.wordpress.com/2015/01/mvc_role_diagram.png)）

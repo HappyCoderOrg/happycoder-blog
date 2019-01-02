@@ -1,0 +1,191 @@
+---
+title: Python Web Flask 實戰開發教學 - Controller、View 和 Templates
+date: 2017-05-03 22:00:00
+author: HappyCoder 自學程式好好玩
+tags: Python, Django, MVC, Web, MTV, Web Backend, Web Framework, 教學, Flask, 框架, 網站開發, Anaconda, ORM, SQLAlchemy, Database, Models, MVC, 資料庫
+---
+
+![Python Web Flask 實戰開發教學](/images/flask101/python-logo.png) 
+
+# 前言
+Web 開發涉及層面很廣，包含了前後端開發、資料庫優化、平行處理、負載平衡、高可用性、資訊安全、雲端伺服器部屬等議題，本系列文章將透過介紹 Python Web Flask 實戰開發來學習現代化網站開發的方方面面。上一篇我們完成了環境建置，這一單元我們將進入 MVC 架構的 Models 部分並學習如何使用 SQLAlchemy 建立和資料庫互動的 ORM 機制。
+
+![Python Web Flask 實戰開發教學](/images/flask101/mvc_role_diagram.png) 
+
+# 什麼是 MVC？
+MVC 模式（Model–view–controller）是軟體工程中的一種軟體架構模式，把軟體系統分為三個基本部分：模型（Model）、視圖（View）和控制器（Controller）。
+
+- 控制器（Controller）- 對 Request/Response 進行處理並透過 Controller 把 Model 的資料串接到 View（Templates）。 
+- 視圖（View） - 直接面對使用者的使用者介面設計。
+- 模型（Model） - 負責和資料庫互動，儲存資料。
+
+使用 MVC 的好處在於可以用更高階的角度去思考整個程式架構提高程式可重用性和降低程式耦合性。 事實上 Django, Rails 和 ASP.NET MVC 等較成熟的 Web 框架也是參考 MVC 的架構去設計。
+
+在前面的單元我們運用 SQLAlchemy 將資料寫到資料庫，接下來這個單元我們要談的是 View 和 Controller，如何把資料透過 Controller 把 Model 的資料串接到 View（Templates）。 
+
+# 建立 Templates
+在 Flask 中我們使用內建的 Jinja 模版語言來動態產生 HTML。為什麼要使用模版語言呢？（這邊我們先假設讀者對於前端工程的 HTML/CSS/JS 有基本了解）若是一般的簡單網頁我們可以自己手動去刻 HTML，但若是有很多資料需要動態產生不同頁面呢？因為我們不太可能一個個去手動生成 HTML，這時候我們就需要透過模版語言來幫我們動態產生 HTML。在這邊我們會透過模版語言將 Controller 從 Model 取出來的資料變數轉換成 HTML 內容結構。
+
+接著來談談 Jinjia，一般來說 Jinjia 變數名稱是由所兩個花括號控制：
+
+```
+{{}}
+```
+
+負責條件控制或是迴圈的實現則是放置在花括號和百分比之間：
+
+```
+{%%}
+```
+
+若是要使用到 JavaScript 的模版語言：
+
+```
+{% raw %}
+<script id="template" type="text/x-handlebars-template">
+    <h1>{{title}}</h1>
+    <div>
+        {{content}}
+    </div>
+</script>
+{% endraw %}
+```
+
+一般 Jinjia 模版變數使用方式：
+
+```html
+<h1>{{ todo.title }}</h1>
+```
+
+生成的 HTML：
+
+```html
+<h1>Hacking</h1>
+```
+
+一般 Jinjia 模版條件控制使用方式：
+
+```html
+{% if todo.title %}
+<h1>{{ todo.title }}</h1>
+{% endif %}
+```
+
+若 `todo.title` 有值則生成的 HTML：
+
+```html
+<h1>Hacking</h1>
+```
+
+一般 Jinjia 模版迴圈使用方式，將 `todos` list 值迭代出來：
+
+```html
+{% for todo in todos %}
+<div>
+    <h1>{{ todo.title }}</h1>
+</div>
+{% endfor %}
+```
+
+生成的 HTML：
+
+```html
+<div>
+    <h1>Hacking</h1>
+</div>
+<div>
+    <h1>Reading</h1>
+</div>
+<div>
+    <h1>Hiking</h1>
+</div>
+```
+
+# 串接 Controller 和 View
+首先我們在專案資料夾下建立 `templates` 資料夾來存放 `tamplate`，這邊先建立一個 `index.html` 來把資料 render 出來：
+
+```html index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>我的 TodoApp</h1>
+    {% for todo in todos %}
+    <div>
+        <h1>{{ todo.title }}</h1>
+    </div>
+    {% endfor %}    
+</body>
+</html>
+```
+
+我們先新增一個 `main_controller.py` 檔案在我們專案資料夾下當做 Controller，內容如下：
+
+```python main_controller.py
+from flask import render_template
+from main import app
+from models import Todo
+app.route('/<string:type>'):
+def get_index(type):
+    todos = type
+    return render_template('index.html', type=type)
+```
+
+```html index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>我的 TodoApp</h1>
+    {% for todo in todos %}
+    <div>
+        <h1>{{ todo.title }}</h1>
+    </div>
+    {% endfor %}    
+</body>
+</html>
+```
+
+接著透過把 Model 資料傳入到 View 中進行呈現，內容如下：
+
+```python main_controller.py
+from flask import render_template
+from main import app
+from models import Todo
+app.route('/'):
+def get_index():
+    todos = Todo.query.all()
+    return render_template('index.html', todos=todos)
+```
+
+# 進一步了解模版語言
+儘管和 Python 長得很像但一些常用函式在 Jinjia 並不存在。事實上，在 MVC 架構中 View/Template 只負責非商業邏輯部分的視覺控制。
+
+1. 內建 Filter（過濾器）
+
+2. 自行開發過濾器
+
+3. 註解
+
+4. 模版繼承
+
+# 總結
+本文介紹了資料庫、關聯式資料庫、ORM 的概念，我們也實際使用了 Flask SQLAlchemy 和 Flask-Migrate 來操作我們的資料庫。在接下來章節中我們將持續介紹 Python Web Flask 實戰開發，並學習現代化網站開發的方方面面。
+
+# 延伸閱讀
+1. [Wiki MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller)
+2. [Python Web 程式設計入門實戰線上課程](http://pics.ee/c34g)
+
+（image via [basicsofwebdevelopment](https://basicsofwebdevelopment.files.wordpress.com/2015/01/mvc_role_diagram.png)）
+
+
