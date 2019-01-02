@@ -3,7 +3,7 @@ node_js: --lts
 before_script:
   - git config user.name "${GH_NAME}"
   - git config user.email "${GH_EMAIL}"
-  - sed -i'' "s~https://github.com/${GH_NAME}/happycoder-blog.git~https://${GH_TOKEN}@github.com/${GH_NAME}/happycoder-blog.git~" _config.yml
+  - sed -i'' "s~https://github.com/${GH_NAME}/happycoder-blog-site.git~https://${GH_TOKEN}@github.com/${GH_NAME}/happycoder-blog-site.git~" _config.yml
 script:
   - hexo g
   - hexo d
