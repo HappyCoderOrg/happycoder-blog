@@ -113,5 +113,5 @@ search:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repo: https://github.com/HappyCoderOrg/happycoder-blog-site.git
+  repo: https://github.com/HappyCoderOrg/happycoder-blog.git
   branch: gh-pages
