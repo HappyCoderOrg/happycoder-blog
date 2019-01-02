@@ -1,24 +1,9 @@
 language: node_js
-node_js: stable
-
-install:
-  - npm install
-
-script:
-  - hexo g
-
-after_script:
-  - cd ./public
-  - git init 
+node_js: --lts
+before_script:
   - git config user.name "${GH_NAME}"
   - git config user.email "${GH_EMAIL}"
-  - git add .
-  - git commit -m "Update docs"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-
-branches:
-  only:
-    - hexo
-env:
- global:
-   - GH_REF: github.com/HappyCoderOrg/happycoder-blog
+  - sed -i'' "s~https://github.com/${GH_NAME}/happycoder-blog.git~https://${GH_TOKEN}@github.com/${GH_NAME}/happycoder-blog.git~" _config.yml
+script:
+  - hexo g
+  - hexo d
