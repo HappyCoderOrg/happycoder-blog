@@ -2,7 +2,25 @@
 title: Python Web Flask 實戰開發教學 - SQLAlchemy 與 ORM
 date: 2017-05-02 22:00:00
 author: HappyCoder 自學程式好好玩
-tags: Python, Django, MVC, Web, MTV, Web Backend, Web Framework, 教學, Flask, 框架, 網站開發, Anaconda, ORM, SQLAlchemy, Database, Models, MVC, 資料庫
+tags: 
+    - Python
+    - Django
+    - MVC
+    - Web
+    - MTV
+    - Web Backend
+    - Web Framework
+    - 程式教學
+    - Flask
+    - 框架
+    - 網站開發
+    - Anaconda
+    - ORM
+    - SQLAlchemy
+    - Database
+    - Models
+    - MVC
+    - 資料庫
 ---
 
 ![Python Web Flask 實戰開發教學](/images/flask101/python-logo.png) 
