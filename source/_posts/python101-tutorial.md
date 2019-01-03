@@ -2,7 +2,17 @@
 title: Python 101 快速入門教學
 date: 2016-12-31 22:00:00
 author: HappyCoder 自學程式好好玩
-tags: Python, Django, MVC, Web, MTV, Web Backend, Web Framework, 教學, Flask, 框架 
+tags: 
+	- Python
+	- Django 
+	- MVC
+	- Web
+	- MTV
+	- Web Backend
+	- Web Framework
+	- 程式教學
+	- Flask
+	- 框架 
 ---
 
 ![Python 101 快速入門教學 ](/images/python-logo.png) 

@@ -77,6 +77,26 @@
                 <br>
                 <div>在 Facebook 上追蹤我們，立即掌握最新和最豐富的程式設計自學資訊！</div>
                 <div class="fb-page" data-href="https://www.facebook.com/HappyCoderOrg" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/HappyCoderOrg" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/HappyCoderOrg">HappyCoder 自學程式好好玩</a></blockquote></div>
+                <br>
+                <br>
+                <div>
+                    <h2>更多程式教學文章</h2>
+                    <%- popular_posts({ maxCount: 4, ulClass: 'popular-posts', PPMixingRate: 0.0, isImage: true} , item ) %>
+                </div>
+                <style>
+                    .popular-posts {
+                        list-style: none;
+                        display: flex;
+                    }
+                    .popular-posts-item {
+                        width: 25%;
+                        margin: 10px;
+                    }
+                    .popular-posts-title a {
+                        font-size: 16px;
+                        text-decoration: none;
+                    }
+                </style>
             </div>
 
             <!-- Begin MailChimp Signup Form -->

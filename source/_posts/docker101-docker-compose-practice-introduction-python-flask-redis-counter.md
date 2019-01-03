@@ -3,12 +3,12 @@ title: Docker 入門實戰教學：如何使用 Docker Compose 建置 Python Fla
 date: 2018-09-06 12:23:23
 author: HappyCoder 自學程式好好玩
 tags: 
-    docker
-    容器
-    docker machine
-    docker compose
-    docker swarm
-    vm
+    - docker
+    - 容器
+    - docker machine
+    - docker compose
+    - docker swarm
+    - vm
 ---
 
 ![Docker101](/images/docker101/docker-compose-logo.png)
