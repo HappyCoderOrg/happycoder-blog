@@ -72,6 +72,7 @@ plugins:
   hexo-generator-sitemap
   hexo-generator-baidu-sitemap
   hexo-generator-tag
+  hexo-related-popular-posts
 
 # hexo sitemap
 sitemap:

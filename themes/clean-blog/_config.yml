@@ -1,9 +1,10 @@
 # Header
 menu:
-  Home: /
-  About: /about
-  Archives: /archives
-  RSS: /atom.xml
+  首頁: /
+  關於我們: /about
+  文章列表: /archives
+  程式設計教學: /tutorials
+  訂閱 RSS: /atom.xml
   Github:
     url: https://github.com/HappyCoderOrg
     icon: github
