@@ -1,5 +1,5 @@
 ---
-title: 電腦科學概論：演算法入門概要
+title: 電腦科學概論：演算法概要
 date: 2019-01-27 22:18:20
 author: HappyCoder 自學程式好好玩
 tags: 
@@ -28,7 +28,7 @@ tags:
 
 我們把它翻譯成人話吧：
 
-> 演算法是一個有輸入且有輸出，為了解決問題所定義出具有明確且有限步驟的工作流程
+> 演算法是一個有輸入且有輸出的解決問題的步驟，它具有明確和有限步驟且有效的特性
 
 舉例來說，我們今天要創作一道蔥花蛋或菜脯蛋，我的步驟會是把材料當做輸入：
 
@@ -69,39 +69,74 @@ check_can_vote(20)
 事實上，解決一個問題不一定只有一種演算法。那我們怎麼評估演算法的好壞呢？一般來說會有兩種方式：時間複雜度和空間複雜度，比較常見的是使用時間複雜度
 
 ## 時間複雜度（Time Complexity）
-最常見的評估演算法好壞就是時間複雜度，時間複雜度是指運用概量而非絕對時間（因為會牽涉到其他變因，所以絕對時間不容易準確），通常我們使用 `Big O notation`大 O 符號來表示時間複雜度。假設算法函式所需執行時間為 `T(n)` ，則我們將其時間複雜度表示為 `O(f(n))`。`f(n)` 又稱為執行時間的成長率，是影響速度最大的變數。
+想要評估一個演算法執行速度快慢，最直覺的方式是測量演算法計算的時間。但由於執行時間會受不同電腦/計算機機器硬體規格與實作方式影響，很難放諸四海皆準，因此學術上傾向於統計演算法步驟數目，當做時間複雜度可考量。
 
-下面這個例子就是 O(n) 的例子，時間複雜度跟輸入的次數有關，隨著 num 變大所需要時間也越久，是線性時間的成長。這邊 `f(n)` 等於 `n`，所以 `O(f(n))` 就是 `O(n)`
+最常見的評估演算法好壞就是時間複雜度，時間複雜度是指運用概量（漸近分析 asymptotic analysis，例如：當 f(n) = n^2 + 3n 這個函數 n 很大時，3n 會比 n^2 小很多，可以忽略不計。當 n 趨近無限大時，f(n) 等價於 n^2）而非絕對時間（因為會牽涉到電腦/計算機環境變因，所以絕對時間不容易準確），通常我們使用 `Big O notation` [大 O 符號](https://zh.wikipedia.org/wiki/%E5%A4%A7O%E7%AC%A6%E5%8F%B7)來表示時間複雜度。假設算法函式所需執行時間為 `T(n)` ，則我們將其時間複雜度表示為 `O(f(n))`。`f(n)` 又稱為執行時間的成長率，是影響速度最大的變數。
+
+首先我們先來看 O(1) 的例子，這個演算法執行的步驟是固定的，跟輸入的值無關：
+
+```py
+# 不管 n 輸入為多少，這個程式永遠只會執行一次
+def print_num(num):
+    print(num)
+
+print_num(10)
+```
+
+下面這個例子就是 O(n) 的例子，時間複雜度跟輸入的次數有關，隨著 num 變大所需要跑 num 次，是線性時間的成長。這邊 `f(n)` 等於 `n`，所以 `O(f(n))` 就是 `O(n)`
 
 ```py
 def sum_number(num):
     total = 0
     for n in num:
         total += num
+    return total
 
 sum_number(10)
 ```
 
+O(nlog(n))
+
+一般常見的時間複雜度如下圖表是：
+![電腦科學概論：演算法入門概要](/images/cs101/algorithm/big-o.jpeg)
+
 ## 空間複雜度
-演算法的空間複雜度是指演算法所需要消耗的儲存空間資源。其計算和表示方法與時間複雜度類似，一般都用複雜度的漸近性來表示。
+演算法的空間複雜度是指演算法所需要消耗的儲存記憶體資源。其計算和表示方法與時間複雜度類似，一般都用複雜度的漸近性來表示（asymptotic analysis）。
 
-# 常見演算法簡介
+例如下面這個函式，不管程式跑了多少遍，都不會影響使用的變數數量，故該函式的空間複雜度為 O(1)：
 
-1. 分治法
-2. 遞迴法
-3. 貪心法
-4. 動態規劃法
-5. 迭代法
-6. 列舉法
-7. 回溯法
+```py
+def sum_number(num):
+    total = 0
+    for n in num:
+        total += num
+    return total
 
+sum_number(10)
+```
+
+但下面這個函式，會隨著丟進去的數字而影響變數的量，例如：
+
+輸入為 n，就換產生 n 個變數空間需要儲存，故該函式空間複雜度為 O(n)
+
+```py
+def sum_number(num):
+    total = []
+    for n in num:
+        total.append(num)
+
+sum_number(10)
+
+```
 
 # 總結
-以上簡單介紹了演算法入門教學。隨著資訊科技發展，演算法已經無所不在存在我們的生活當中。舉凡上網 google 搜尋資料、下載檔案的壓縮方法、檔案的加密傳輸等，都可以看到演算法運作的蹤跡，所以值得我們細細品味，接下來我們將介紹更多的經典演算法範例。
+以上簡單介紹了演算法入門教學。隨著資訊科技發展，演算法已經無所不在存在我們的生活當中。舉凡上網 google 搜尋資料、下載檔案的壓縮方法、檔案的加密傳輸等，都可以看到演算法運作的蹤跡，所以值得我們細細品味，接下來我們將介紹常見的經典演算法範例。
 
 
 # 參考文件
 1. [台師大演算法筆記](http://www.csie.ntnu.edu.tw/~u91029/)
 2. [演算法與資料結構](http://alrightchiu.github.io/SecondRound/mu-lu-yan-suan-fa-yu-zi-liao-jie-gou.html)
+3. [大O符號](https://zh.wikipedia.org/wiki/%E5%A4%A7O%E7%AC%A6%E5%8F%B7)
+4. [Algorithm Analysis](http://www.csie.ntnu.edu.tw/~u91029/AlgorithmAnalysis.html)
 
-image via [pandorafms](https://blog.pandorafms.org/what-is-an-algorithm/)
+image via [pandorafms](https://blog.pandorafms.org/what-is-an-algorithm/)、[freecodecamp](https://cdn-images-1.medium.com/max/1600/1*KfZYFUT2OKfjekJlCeYvuQ.jpeg)
