@@ -79,4 +79,6 @@ tags:
 6. 恭喜讀者完成第一個 JavaScript 應用程式啦！
 
 # 影片教學
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rcjPhZitTqI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rcjPhZitTqI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+</div>
