@@ -2,6 +2,8 @@
 title: 電腦科學概論：演算法概要
 date: 2019-01-27 22:18:20
 author: HappyCoder 自學程式好好玩
+share_cover: /images/cs101/algorithm/algorithm-cover.png
+cover: /images/cs101/algorithm/algorithm-cover.png
 tags: 
     - 自學程式
     - 自學程式設計
