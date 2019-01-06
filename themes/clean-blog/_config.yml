@@ -5,6 +5,11 @@ menu:
   文章列表: /archives
   程式設計教學: /tutorials
   訂閱 RSS: /atom.xml
+  FB 交流社群:
+    url: https://www.facebook.com/groups/HappyCoderOrg
+  臉書粉絲頁:
+    url: https://www.facebook.com/HappyCoderOrg
+    icon: facebook
   Github:
     url: https://github.com/HappyCoderOrg
     icon: github
