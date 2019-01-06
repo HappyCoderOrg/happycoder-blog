@@ -138,5 +138,6 @@ sum_number(10)
 2. [演算法與資料結構](http://alrightchiu.github.io/SecondRound/mu-lu-yan-suan-fa-yu-zi-liao-jie-gou.html)
 3. [大O符號](https://zh.wikipedia.org/wiki/%E5%A4%A7O%E7%AC%A6%E5%8F%B7)
 4. [Algorithm Analysis](http://www.csie.ntnu.edu.tw/~u91029/AlgorithmAnalysis.html)
+5. [All you need to know about “Big O Notation” to crack your next coding interview](https://medium.freecodecamp.org/all-you-need-to-know-about-big-o-notation-to-crack-your-next-coding-interview-9d575e7eec4)
 
 image via [pandorafms](https://blog.pandorafms.org/what-is-an-algorithm/)、[freecodecamp](https://cdn-images-1.medium.com/max/1600/1*KfZYFUT2OKfjekJlCeYvuQ.jpeg)
