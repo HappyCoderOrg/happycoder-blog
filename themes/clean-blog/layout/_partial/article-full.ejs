@@ -72,7 +72,9 @@
 
                 <br>
                 <div>喜歡我們的文章嗎？歡迎分享按讚給予我們支持和鼓勵！</div>
-                <div class="fb-like" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                <div class="fb-like-block">
+                    <div class="fb-like" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                </div>
                 <br>
                 <br>
                 <div>在 Facebook 上追蹤我們，立即掌握最新和最豐富的程式設計自學資訊！</div>
@@ -84,17 +86,31 @@
                     <%- popular_posts({ maxCount: 4, ulClass: 'popular-posts', PPMixingRate: 0.0, isImage: true} , item ) %>
                 </div>
                 <style>
+                    .fb-like-block {
+                        width: 100px !important;
+                    }
                     .popular-posts {
                         list-style: none;
                         display: flex;
                     }
                     .popular-posts-item {
                         width: 25%;
-                        margin: 10px;
+                        padding: 10px;
                     }
                     .popular-posts-title a {
                         font-size: 16px;
                         text-decoration: none;
+                    }
+                    @media only screen and (max-width: 600px) {
+                        .popular-posts-item {
+                            width: 100%;
+                            padding: 10px;
+                        }
+                        .popular-posts {
+                            list-style: none;
+                            display: flex;
+                            flex-direction: column;
+                        }
                     }
                 </style>
             </div>
