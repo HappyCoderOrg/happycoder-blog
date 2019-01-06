@@ -18,7 +18,6 @@ permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # image
-share_cover: /img/logo.png
 cover: /img/logo.png
 
 # Directory
