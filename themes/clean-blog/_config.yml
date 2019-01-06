@@ -19,6 +19,8 @@ menu_title:
 
 # URL of the Home page image
 index_cover: /img/banner-s.jpg
+share_cover: /img/logo.png
+cover: /img/logo.png
 
 # Default post title
 default_post_title: Untitled
@@ -49,4 +51,4 @@ facebook_url: https://www.facebook.com/HappyCoderOrg
 github_url: https://github.com/HappyCoderOrg
 gitlab_url:
 linkedin_url:
-mailto:
+mailto: happycoderorg@gmail.com
