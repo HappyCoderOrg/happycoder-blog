@@ -101,5 +101,12 @@
     <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
     <% } %>
-	
+	<style>
+    .intro-header {
+        background-image: url('<%- theme.index_cover %>');
+        height: 550px;
+        filter: grayscale(30%);
+        -webkit-filter: grayscale(30%);
+    }
+    </style>
 </head>
