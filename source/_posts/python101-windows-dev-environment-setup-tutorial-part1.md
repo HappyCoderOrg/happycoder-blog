@@ -44,7 +44,7 @@ tags:
 ![如何在 Windows 打造 Python Web 開發環境](/images/python101/python-logo.png)
 
 # 前言
-所謂工欲善其事，必先利其器。我們開發程式之前我們最重要的就是要設定好開發環境，接下來我們將帶領讀者體驗如何在 Windows 打造 JavaScript Web 開發環境。
+所謂工欲善其事，必先利其器。我們開發程式之前我們最重要的就是要設定好開發環境，接下來我們將帶領讀者體驗如何在 Windows 打造 Python Web 開發環境。
 
 # 安裝軟體步驟
 1. 下載安裝 [google chrome](https://www.google.com.tw/chrome/browser/desktop/index.html) 瀏覽器
