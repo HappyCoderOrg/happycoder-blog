@@ -3,7 +3,6 @@ title: 如何在 Windows 打造 Python Web 開發環境入門教學 Part1
 date: 2017-12-20 10:23:23
 author: HappyCoder 自學程式好好玩
 share_cover: /images/python101/python-logo.png
-cover: /images/python101/python-logo.png
 tags: 
     - 自學程式
     - 自學程式設計

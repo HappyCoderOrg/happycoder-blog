@@ -2,6 +2,7 @@
 title: JavaScript 101 快速入門教學
 date: 2016-12-21 22:00:00
 author: HappyCoder 自學程式好好玩
+share_cover: /images/javascript.png
 tags: JavaScript, ECMAScript2015, ES6, Front End, Front End Development Environment
 ---
 
