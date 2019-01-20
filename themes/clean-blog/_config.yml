@@ -20,7 +20,6 @@ menu_title:
 # URL of the Home page image
 index_cover: /img/banner-s.jpg
 url: https://www.happycoder.org
-cover: /img/logo.png
 
 # Default post title
 default_post_title: Untitled
