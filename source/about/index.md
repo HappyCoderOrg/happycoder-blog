@@ -12,6 +12,6 @@ HappyCoder 自學程式設計學院是一個自學程式設計（Programming）�
 - [HappyCoder 臉書學習社群](https://www.facebook.com/groups/HappyCoderOrg/)
 - [HappyCoder 官方粉絲專頁](https://www.facebook.com/HappyCoderOrg/)
 - [HappyCoder 電子郵件](mailto:happycoderorg@gmail.com)
-- [HappyCoder Youtube 影教頻道](https://www.youtube.com/channel/UCehU65UuvbswxhZ4CXJkdxA)
+- [HappyCoder Youtube 影音頻道](https://www.youtube.com/channel/UCehU65UuvbswxhZ4CXJkdxA)
 
 tags: 自學程式, 自學程式設計, 程式設計, 線上自學, coding, coder, programming, computer, computer science, code, 電腦科學, 學寫程式, 學程式
