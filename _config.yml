@@ -17,8 +17,8 @@ root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
-# image
-cover: /img/logo.png
+# image og:image
+# cover: /img/logo.png
 
 # Directory
 source_dir: source
