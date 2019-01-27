@@ -1,5 +1,5 @@
 ---
-title: 想要自學程式？7 個自學程式設計正確的觀念和心態
+title: 想要自學程式？七個自學程式設計正確的觀念和心態
 date: 2019-01-28 20:23:23
 author: HappyCoder 自學程式設計學院
 tags: 
@@ -16,7 +16,7 @@ tags:
     - programming
 ---
 
-![想要自學程式？7 個自學程式設計正確的觀念和心態](/images/python101/coding101.jpeg)
+![想要自學程式？七個自學程式設計正確的觀念和心態](/images/python101/coding101.jpeg)
 
 # 前言
 
@@ -48,17 +48,17 @@ tags:
 # 選擇合適的程式語言
 若你是完全的初學者，我們會建議你從以下程式語言開始入手，再一步步針對你有興趣的領域繼續鑽研。
 
-![想要自學程式？7 個自學程式設計正確的觀念和心態](/images/python101/scratch-logo.jpg)
+![想要自學程式？七個自學程式設計正確的觀念和心態](/images/python101/scratch-logo.jpg)
 
 1. [Scratch](https://scratch.mit.edu/)
 若是你是國中小學的學員，你可以從 Scratch 開始。Scratch 是 MIT 麻省理工學院所開發的電腦程式平台，透過拖拉積木的方式可以讓使用者學習電腦程式的邏輯和概念，創造出多媒體或是遊戲應用，蠻適合低年齡層的學員使用。更重要的是 Scratch 本身是一個全世界的社群平台，你可以分享自己的作品也可以觀摩學習其他人的作品、認識新朋友，教學相長。
 
-![想要自學程式？7 個自學程式設計正確的觀念和心態](/images/python101/python-logo.png)
+![想要自學程式？七個自學程式設計正確的觀念和心態](/images/python101/python-logo.png)
 
 2. [Python](https://www.python.org/)
 若是成人或是想直接學習正式一點程式語言的學生，我們會推薦由 Python 入手。為什麼是 Python 呢？因為對於初學者來說 Python 是一個簡單易學但又功能強大的程式語言（Python 不僅可以編寫 Web 網站、桌面應用程式、開發遊戲更是機器學習/深度學習等資料科學應用的重要程式語言）。相較於其他 C/C++ 或是 Java 等程式語言，Python 相對而言較為簡潔且容易閱讀，此外不用經過編譯（compile）即可以執行程式也對於初學者較為友善。
 
-![想要自學程式？7 個自學程式設計正確的觀念和心態](/images/python101/javascript-logo.png)
+![想要自學程式？七個自學程式設計正確的觀念和心態](/images/python101/javascript-logo.png)
 
 3. [JavaScript](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript)
 Java 和 JavaScript（簡稱 JS）和名字雖然很像但是卻是兩個不同的程式語言（可以說是熱狗和狗的差別），發展方向和應用層面也有所不同。隨著網際網路和瀏覽器引擎和 Node.js 的發展 JavaScript 的影響力有增無減。不再局限於瀏覽器的從早期的跑龍套到現在的獨挑大樑，現在不管是 Web 前後端、行動應用程式、桌面應用程式，甚至是深度學習等都可以使用 JavaScript 來開發。若是你想要開發有關 Web 相關的應用，更是必須學好 JavaScript，對於新手來說可以透過 Web 呈現和分享自己的作品是一個很有成就感的事情。但 JavaScript 技術變化很快，若是有有經驗的導師帶領可以少走許多冤枉路，且學習 JavaScript 通常需要搭配學習 HTML/CSS 語法。
