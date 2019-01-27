@@ -1,7 +1,7 @@
 ---
 title: 如何在 Windows 打造 Python 開發環境設定基礎入門教學
 date: 2017-11-17 20:23:23
-author: HappyCoder 自學程式好好玩
+author: HappyCoder 自學程式設計學院
 tags: Python, Django, MVC, Web, MTV, Web Backend, Web Framework, 教學, Flask, 框架, coding, code, 程式設計, 自學程式設計, CS, Computer, Computer Science
 ---
 

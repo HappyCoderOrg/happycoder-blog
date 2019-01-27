@@ -1,7 +1,7 @@
 ---
 title: Python 101 快速入門教學
 date: 2016-12-31 22:00:00
-author: HappyCoder 自學程式好好玩
+author: HappyCoder 自學程式設計學院
 share_cover: /images/python-logo.png
 tags: 
 	- Python

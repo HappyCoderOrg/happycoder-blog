@@ -2,7 +2,7 @@
 title: 用 Python 自學程式設計：程式設計思維入門
 date: 2017-08-10 22:00:00
 tags: Python, Django, MVC, Web, MTV, Web Backend, Web Framework, 教學, Flask, 框架, coding, code, 程式設計, 自學程式設計, CS, Computer, Computer Science
-author: HappyCoder 自學程式好好玩
+author: HappyCoder 自學程式設計學院
 ---
 
 ![Python 自學程式設計：程式設計思維入門](/images/learning-programming/coding.jpg) 

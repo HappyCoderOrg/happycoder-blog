@@ -1,7 +1,7 @@
 ---
 title: 自學程式設計與電腦科學入門實戰：Git 與 Github 版本控制基本指令與操作入門教學
 date: 2017-11-19 10:23:23
-author: HappyCoder 自學程式好好玩
+author: HappyCoder 自學程式設計學院
 tags: 
     - 自學程式
     - 自學程式設計

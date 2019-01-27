@@ -1,7 +1,7 @@
 ---
 title: 用 Python 自學資料科學與機器學習入門實戰：Pandas 基礎入門
 date: 2017-10-11 09:54:49
-author: HappyCoder 自學程式好好玩
+author: HappyCoder 自學程式設計學院
 tags:
 	- Python
 	- Machine Learning

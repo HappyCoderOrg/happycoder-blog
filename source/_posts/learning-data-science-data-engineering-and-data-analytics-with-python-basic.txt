@@ -2,7 +2,7 @@
 title: 用 Python 自學資料科學與數據分析：基礎篇
 date: 2017-09-11 22:00:00
 tags: Python, Machine Learning, 機器學習, AI, Artificial Intelligence, NLP, Data Mining, 人工智慧, 監督式學習, Supervised learning, 大數據, 資料分析, 數據分析, 學程式, 程式設計
-author: HappyCoder 自學程式好好玩
+author: HappyCoder 自學程式設計學院
 ---
 
 ![Python 自學程式設計：程式設計思維入門](/images/learning-programming/coding.jpg) 

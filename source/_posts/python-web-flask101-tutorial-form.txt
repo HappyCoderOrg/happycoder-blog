@@ -1,7 +1,7 @@
 ---
 title: Python Web Flask 實戰開發教學 - Controller、View 和 Templates
 date: 2017-05-03 22:00:00
-author: HappyCoder 自學程式好好玩
+author: HappyCoder 自學程式設計學院
 tags: Python, Django, MVC, Web, MTV, Web Backend, Web Framework, 教學, Flask, 框架, 網站開發, Anaconda, ORM, SQLAlchemy, Database, Models, MVC, 資料庫
 ---
 

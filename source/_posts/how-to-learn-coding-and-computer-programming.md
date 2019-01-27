@@ -1,7 +1,7 @@
 ---
 title: 想要自學程式？自學程式設計正確觀念和心態
 date: 2019-01-28 20:23:23
-author: HappyCoder 自學程式好好玩
+author: HappyCoder 自學程式設計學院
 tags: 
     - coding
     - code

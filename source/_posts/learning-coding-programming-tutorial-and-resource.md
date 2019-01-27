@@ -1,7 +1,7 @@
 ---
 title: 自學程式設計學習資源懶人包
 date: 2017-01-27 00:23:23
-author: HappyCoder 自學程式好好玩
+author: HappyCoder 自學程式設計學院
 tags:
 	- 自學程式
 	- 自學程式設計
@@ -39,7 +39,7 @@ tags:
 1. [非本科生，我想半路出家學寫程式，該如何開始？](https://cofounderinc.com/2015/03/15/lerning-how-to-write-code/)
 2. [Python Web 程式設計入門實戰](https://pics.ee/c34g)
 3. [JavaScript 程式設計新手村課程](https://pics.ee/1HC~)
-4. [HappyCoder 自學程式好好玩臉書社團](https://www.facebook.com/groups/HappyCoderOrg/)
+4. [HappyCoder 自學程式設計學院臉書社團](https://www.facebook.com/groups/HappyCoderOrg/)
 
 # 實務程式設計
 

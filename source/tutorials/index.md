@@ -1,7 +1,7 @@
 ---
 title: 電腦科學與程式設計教學
 date: 2019-01-05 22:18:20
-author: HappyCoder 自學程式好好玩
+author: HappyCoder 自學程式設計學院
 ---
 
 # 電腦科學
