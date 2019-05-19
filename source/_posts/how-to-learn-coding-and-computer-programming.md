@@ -79,8 +79,12 @@ Micro Bit（也叫做 BBC Micro Bit）是由 BBC 所推出的具備藍牙、光�
 
 很重要所以講三遍！
 
+![想要自學程式？七個自學程式設計正確的觀念和心態](/images/python101/stackoverflow.png)
+
 # 學會網路搜尋 Google 大法
 一般在學習程式設計遇到困難時，最好的解法就是把錯誤訊息或是遇到的問題去 [Google](https://www.google.com/) 搜尋一下，大部分情況下都可以在網路得到對應的解答。另外，[Stack Overflow 程式設計問答網站](https://stackoverflow.com/)和 [Github 開源程式碼集散地](https://github.com/) 也是一個學習的好去處，沒事去逛逛，相信一定會有不少收穫。
+
+![想要自學程式？七個自學程式設計正確的觀念和心態](/images/python101/github.png)
 
 # 加入社群，尋找戰友
 一個人寫 code 很孤獨，一群人寫 code 很幸福。在學習寫程式的過程是一條孤獨且漫長的道路，即便是經驗老道的老手也需要和不同領域的人請教，更何況是剛入門的新手。選擇一個友善的自學程式社群加入，可以讓你在學習程式語言的過程中更加順遂，而加入 [HappyCoder 自學程式設計學院](https://www.facebook.com/groups/HappyCoderOrg) 相信是一個很好的選擇。
