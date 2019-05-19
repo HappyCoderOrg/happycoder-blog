@@ -116,6 +116,8 @@ Micro Bit（也叫做 BBC Micro Bit）是由 BBC 所推出的具備藍牙、光�
 
 另外，當你完成一個程式專案或是解掉某個 bug 時，記得可以撰寫成技術文章（若是有心要轉職程式設計領域的同學，經營自己的 Github 和部落格真的很重要），不但可以豐富自己的專業履歷也可以強化自己的記憶方便未來查找外，更重要的是也可以幫助到下一個跟你遇到同樣問題的人喔！
 
+![想要自學程式？七個自學程式設計正確的觀念和心態](/images/python101/yoda.jpg)
+
 # 尋找導師，持續學習
 不管是在職場工作或是學習程式設計，有好的導師或是 role model 引導確實可以讓自己少走許多冤枉路和減少時間金錢的浪費。但一開始盡量不要找已經工作十年以上的工程師或是程式設計師，對於新手來說，兩三年入行經驗的人剛好是個不會太有距離感，導師又能體會新手剛入門會遇到的挫折和煩惱，帶著誠懇和禮貌去尋找你身邊或是社群中願意帶你的導師。不過記得當你離開新手村後，若有機會也可以成為其他人的導師，取之於社群回饋於社群。
 
@@ -139,4 +141,4 @@ Happy Coding :)
 1. [自學程式設計學習資源懶人包](https://www.happycoder.org/2017/01/27/learning-coding-programming-tutorial-and-resource/)
 2. [用 Python 自學程式設計：程式設計思維入門](https://www.happycoder.org/2017/08/10/learning-programming-and-coding-with-python-introduction/)
 
-（image via [negativespace.co](http://negativespace.co/photos/coding-stock-photo-3/)）
+（image via [negativespace.co](http://negativespace.co/photos/coding-stock-photo-3/)、[yoda](https://ixxidesign.azureedge.net/media/1045225/07-Star-Wars-Yoda.jpg?width=562)）
