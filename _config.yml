@@ -86,11 +86,8 @@ baidusitemap:
 ## robots.txt
 robotstxt:
   useragent: "*"
-  disallow:
-    - /js/
-    - /css/
   sitemap: 
-    - /atom.xml
+    - /sitemap.xml
   baidusitemap: 
     - /baidusitemap.xml
 
