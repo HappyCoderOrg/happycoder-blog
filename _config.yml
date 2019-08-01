@@ -86,8 +86,10 @@ baidusitemap:
 ## robots.txt
 robotstxt:
   useragent: "*"
+  disallow:
+    - ''
   sitemap: 
-    - /sitemap.xml
+    - https://www.happycoder.org/sitemap.xml
   baidusitemap: 
     - /baidusitemap.xml
 
