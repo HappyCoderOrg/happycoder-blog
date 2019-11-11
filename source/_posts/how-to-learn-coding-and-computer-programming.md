@@ -124,6 +124,9 @@ Micro Bit（也叫做 BBC Micro Bit）是由 BBC 所推出的具備藍牙、光�
 俗話說：師父領進門，修行在個人。若你有志於程式設計領域繼續鑽研，那就必須認知到 IT 行業是一個需要持續精進自我的領域。不管是技術還有如何設計產品、溝通協調、管理專案、撰寫簡潔漂亮的程式碼、設計架構等都需要持續地進修學習，唯有持續保持積極的學習態度和能力才是在這個領域持續保有競爭力的最佳保證。
 
 # 總結
+
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/Rx_UiFmhbfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 以上我們整理了多年來自學程式設計的經驗，我們也曾花過許多冤枉錢和時間。在這邊分享自學程式設計必備觀念和心態，希望讓所有有自學程式設計需求的朋友，不再徬徨、無助。
 
 最後複習一下自學程式設計必備觀念和心態：
@@ -136,6 +139,20 @@ Micro Bit（也叫做 BBC Micro Bit）是由 BBC 所推出的具備藍牙、光�
 7. 尋找導師，持續學習
 
 Happy Coding :)
+
+# 第 02 期 Python 程式設計入門共學營 【業界資深工程師導師帶你練功】熱烈報名中
+
+![第 02 期 Python 程式設計入門共學營 【業界資深工程師導師帶你練功】熱烈報名中](/images/python101/co-learning-camp-python-basic-cover.png)
+
+由業界資深工程師導師帶你零基礎入門 Python 程式設計，我們為你去蕪存菁梳理出最重要的核心觀念和知識點，讓學員在有限的時間和金錢內用最有效率的方式學習，讓你的自學程式設計不再孤單無助！Co-Learning Camp 程式設計共學營是一種新型態跨領域線上學習方式（翻轉教育學習法），透過線上互動式程式練習、社群共學和專題導向式學習方式來學習程式設計，進而培養第二專長和跨領域自學能力，提升你的職場競爭力，成為更好的自己。
+
+你也想累積專題作品實作經驗，建立基本程式設計應用能力嗎？你也想培養第二專長和跨領域自學能力，提升你的職場競爭力，成為更好的自己嗎？
+
+第 02 期 Python 程式設計入門共學營【8 週 24 個程式冒險 | 業界資深工程師導師帶你練功】熱烈報名中，名額有限，額滿為止！
+
+活動時間：2019/11/23 - 2020/01/16
+馬上報名成為更好的自己：[報名連結](https://happycoder.pros.is/ELD96)
+
 
 # 參考文件
 1. [自學程式設計學習資源懶人包](https://www.happycoder.org/2017/01/27/learning-coding-programming-tutorial-and-resource/)

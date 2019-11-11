@@ -1,0 +1,96 @@
+---
+title: 電腦科學速成班中文課程導讀（Crash Course Computer Science）專欄連載中
+date: 2019-07-10 10:23:23
+author: HappyCoder 自學程式設計學院
+tags: 
+    - 自學程式
+    - 自學程式設計
+    - 程式設計
+    - 線上自學
+    - coding
+    - coder
+    - programming
+    - computer
+    - computer science
+    - code
+    - 電腦科學
+    - 學寫程式
+    - 學程式
+    - 軟體工程師
+    - 軟體工程
+    - software engineering
+    - Crash Course Computer Science
+---
+
+Crash Course Computer Science 是由對於[科普教育具有專業且熱情的 Carrie Anne Philbin](https://about.me/carrieannephilbin)製作的線上電腦科學科普系列影片，影片內容著重廣度而非深度，內容涵蓋電腦發展歷史、電腦硬體、軟體工程、資料結構與演算法、作業系統、網際網路、資訊安全、機器學習與人工智慧等，內容十分生動有趣。本系列文章將透過中文導讀和補充實務上程式設計和電腦科學相關資訊的方式帶領大家入門電腦科學速成（Crash Course Computer Science），希望讓讀者們可以對於電腦科學/計算機概論有一個全面性的認識，在未來自學程式設計相關課程時有良好的背景知識和基礎。
+
+<iframe width="740" height="400" src="https://www.youtube.com/embed/tpIctyqH29Q?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+各位 HappyCoder 讀者有福啦！這次我們 HappyCoder 自學程式設計學院和開發者知識分享平台 Coderbridge 合作推出：[電腦科學速成中文導讀（Crash Course Computer Science）專欄！](https://www.coderbridge.com/columns/2bb69f9c74994ccea780f782572b7ac0)
+
+## 如果你是
+1. 對於人工智慧和資訊科技即將影響我們日常生活感到徬徨無助的讀者
+2. 對於電腦科學或程式設計有興趣的初學者但不知如何開始的讀者
+3. 想了解電腦科學、資訊科技如何在生活上的應用和影響我們的生活
+4. 想對電腦科學/計算機概論有全面性了解
+5. 學習程式設計一段時間但想補足電腦科學的基礎知識
+
+## 你將獲得
+1. 學習電腦科學背後運作的邏輯，當家人朋友甚至小孩問你時不會驚慌失措 
+2. 對於電腦科學/計算機概論有一個全面性的認識，在未來自學程式設計相關課程時有良好的背景知識和基礎
+3. 認識志同道合的社群共學夥伴
+4. 對於茫茫知識海不知如何下手，想要系統性學習電腦科學科普知識
+
+## 事前準備
+1. 註冊全球最大程式碼管理平台 Github 帳號，[安裝教學文章](http://localhost:4000/2017/11/19/cs101-learning-programming-and-coding-with-python-git-and-github-tutorial/)
+2. 此為線上專欄課程導讀請自備網路和電腦安排時間閱讀並紀錄學習心得
+3. 基本的電腦操作和上網技能
+
+## 預計大綱
+1. 課前導覽
+2. 早期的計算 - Early Computing
+3. 電子計算 - Electronic Computing
+4. 布林邏輯和邏輯電路 - Boolean Logic & Logic Gates
+5. 二進制 - Representing Numbers and Letters with Binary
+6. 算數邏輯運算單元 - How Computers Calculate - the ALU
+7. 暫存器和記憶體 - Registers and RAM
+8. 中央處理器 - The Central Processing Unit（CPU）
+9. 指令和程式 - Instructions & Programs
+10. 進階 CPU 設計 - Advanced CPU Designs
+11. 程式語言的發展史 - Early Programming
+12. 第一個程式語言 - The First Programming Languages
+13. 程式語言基礎：敘述句和函式 - Programming Basics: Statements & Functions
+14. 演算法入門介紹 - Intro to Algorithms
+15. 資料結構入門- Data Structures
+16. 電腦科學與人工智慧之父：艾倫·圖靈 - Alan Turing
+17. 軟體工程入門 - Software Engineering
+18. 積體電路與摩爾定律 - Integrated Circuits & Moore’s Law
+19. 作業系統入門 - Operating Systems
+20. 記憶體和儲存機制 - Memory & Storage
+21. 檔案系統 - Files & File Systems
+22. 檔案壓縮機制 - Compression
+23. 鍵盤和指令執行介面 - Keyboards & Command Line Interfaces
+24. 螢幕和2D 圖形顯示 - Screens & 2D Graphics
+25. 冷戰和消費主義 - The Cold War and Consumerism
+26. 個人電腦革命 - The Personal Computer Revolution
+27. 圖形化使用介面 - Graphical User Interfaces
+28. 3D 圖形 - 3D Graphics
+29. 電腦/計算機網路 - Computer Networks
+30. 網際網路 - The Internet
+31. Web 網頁入門 - The World Wide Web
+32. 網路資訊安全 - Cybersecurity
+33. 駭客與網路攻擊 - Hackers & Cyber Attacks
+34. 密碼學 - Cryptography
+35. 機器學習與人工智慧 - Machine Learning & Artificial Intelligence
+36. 計算機視覺 - Computer Vision
+37. 自然語言處理 - Natural Language Processing
+38. 機器人學 - Robots
+39. 電腦/計算機心理學 - Psychology of Computing
+40. 教育科學 - Educational Technology
+41. 奇點、天網、電腦/計算機的未來 - The Singularity, Skynet, and the Future of Computing
+42. 課程回顧與未來學習方向建議
+
+> 掌握電腦科學背後運作邏輯，讓你在 AI 時代不再徬徨無助！一起加入 [電腦科學速成中文導讀（Crash Course Computer Science）專欄課程](https://www.coderbridge.com/columns/2bb69f9c74994ccea780f782572b7ac0/info)！
+
+# 參考文件
+1. [CARRIE ANNE PHILBIN](https://about.me/carrieannephilbin)
